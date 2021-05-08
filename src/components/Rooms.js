@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Rooms() {
+function Rooms() {
     return (
         <div>
             
         </div>
     )
 }
+
+export default Rooms

@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Mainpic() {
+function Mainpic() {
     return (
         <div>
             
         </div>
     )
 }
+
+export default Mainpic

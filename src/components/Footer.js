@@ -1,9 +1,14 @@
 import React from 'react'
 
-export default function Footer() {
+function Footer() {
     return (
-        <div>
-            
-        </div>
+        <footer className="bg-dark text-light py-3">
+            <p className="text-center">
+            Copyright &copy; MyTodosList.com
+            </p>
+        </footer>
     )
 }
+
+
+export default Footer
