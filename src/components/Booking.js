@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Booking() {
+function Booking() {
     return (
         <div>
             
         </div>
     )
 }
+
+export default Booking

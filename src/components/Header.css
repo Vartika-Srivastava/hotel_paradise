@@ -1,0 +1,9 @@
+.logo{
+    height: 80px;
+    width: 80px;
+    margin: 0 15px;
+}
+.navbar{
+    background-color: black;
+    font-size: 25px;
+}
