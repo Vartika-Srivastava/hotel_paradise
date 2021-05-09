@@ -10,60 +10,51 @@ import img7 from './images/Attractions/PannaMeenaKaKund.jpg'
 
 function Attractions() {
     return (
-            <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 
-                <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <div class="carousel-inner">
+
+                <div className="carousel-item active">
+                <img src={img1} className="d-block w-100 aimg" alt="City Palace" />
                 </div>
 
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                    <img src={img1} className="d-block w-100 aimg" alt="City Palace" />
-                    </div>
-
-                    <div className="carousel-item">
-                    <img src={img2} className="d-block w-100 aimg" alt="..." />
-                    </div>
-
-                    <div className="carousel-item">
-                    <img src={img3} className="d-block w-100 aimg" alt="..." />
-                    </div>
-
-                    <div className="carousel-item">
-                    <img src={img4} className="d-block w-100 aimg" alt="..." />
-                    </div>
-
-                    <div className="carousel-item">
-                    <img src={img5} className="d-block w-100 aimg" alt="..." />
-                    </div>
-
-                    <div className="carousel-item">
-                    <img src={img6} className="d-block w-100 aimg" alt="..." />
-                    </div>
-
-                    <div className="carousel-item">
-                    <img src={img7} className="d-block w-100 aimg" alt="..." />
-                    </div>
+                <div className="carousel-item">
+                <img src={img2} className="d-block w-100 aimg" alt="Galtaji" />
                 </div>
 
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
+                <div className="carousel-item">
+                <img src={img3} className="d-block w-100 aimg" alt="Hawa Mahal" />
+                </div>
 
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
+                <div className="carousel-item">
+                <img src={img4} className="d-block w-100 aimg" alt="Jaigarh fort" />
+                </div>
+
+                <div className="carousel-item">
+                <img src={img5} className="d-block w-100 aimg" alt="Jal Mahal" />
+                </div>
+
+                <div className="carousel-item">
+                <img src={img6} className="d-block w-100 aimg" alt="Jhalana Leopard Safari" />
+                </div>
+
+                <div className="carousel-item">
+                <img src={img7} className="d-block w-100 aimg" alt="Panna Meena Ka Kund" />
+                </div>
 
             </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
     )
 }
 
