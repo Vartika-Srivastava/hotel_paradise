@@ -1,7 +1,7 @@
 import React from 'react'
-import img1 from './Images/Main/Hotel.jpg'
-import img2 from './Images/Main/Pool.jpg'
-import img3 from './Images/Main/Paradisefood.jpg'
+import img1 from './images/Main/Hotel.jpg'
+import img2 from './images/Main/Pool.jpg'
+import img3 from './images/Main/Paradisefood.jpg'
 
 function Mainpic() {
     let mStyle = { 

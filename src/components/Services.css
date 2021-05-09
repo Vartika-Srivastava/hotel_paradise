@@ -1,0 +1,13 @@
+.simg {
+    width: 450px;
+    height: 350px;
+}
+
+.card {
+    float:left;
+    margin: 10px 0px 0px 17px;
+}
+.top {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
