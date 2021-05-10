@@ -15,9 +15,10 @@ function App() {
     <Router>
       <Header title="Hotel Paradise"/>
       <Switch>
-
-          <Route path="/">
-            <Mainpg/>
+        
+          <Route exact path="/" render={()=>{
+            return(<Mainpg/>)
+          }}>
           </Route>
 
           <Route path="/booking">

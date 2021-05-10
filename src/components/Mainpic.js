@@ -5,7 +5,7 @@ import img3 from './images/Main/Paradisefood.jpg'
 
 function Mainpic() {
     let mStyle = { 
-        height: "550px"
+        height: "645px"
     }
     return (
         <div>

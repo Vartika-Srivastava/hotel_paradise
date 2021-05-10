@@ -3,7 +3,7 @@
     height: 350px;
 }
 
-.card {
+.scard {
     float:left;
     margin: 10px 0px 0px 17px;
 }
@@ -11,3 +11,13 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.simg:hover{
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 20px #ccc;
+}
+/* .sdiv{
+    max-height: 1200px;
+    max-width: 100%;
+} */
