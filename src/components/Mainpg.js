@@ -3,6 +3,7 @@ import Mainpic from './Mainpic';
 import Rooms from './Rooms';
 import Services from './Services';
 import Attractions from './Attractions';
+import Booking from './Booking'
 
 function Mainpg() {
     return (
@@ -11,6 +12,7 @@ function Mainpg() {
             <Rooms />
             <Services />
             <Attractions />
+            <Booking/>
         </>
     )
 }
