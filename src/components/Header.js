@@ -19,6 +19,7 @@ function Header(props) {
                     <li className="nav-item px-5">
                         <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                     </li>
+                    
                     <li className="nav-item px-5">
                         <Link className="nav-link" to="/booking">Book Now</Link>
                     </li>    

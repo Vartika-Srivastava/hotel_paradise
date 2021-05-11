@@ -3,10 +3,6 @@
     width: 450px;
 }
 
-.cdiv{
-    margin-left: 25px;
-    margin-bottom: 100px;
-}
 .att:hover{
     -moz-box-shadow: 0 0 20px #ccc;
     -webkit-box-shadow: 0 0 20px #ccc;
@@ -14,6 +10,5 @@
 }
 .atimg{
     width: 451px;
-    float: left;
-    margin: 15px 15px 10px 35px;
+    margin: 15px 0px 10px 25px;
 }
