@@ -6,6 +6,7 @@ body {
 .row{
     margin-bottom: 40px;
     margin-top: 20px;
+
 }
 
 .login-box {
@@ -14,9 +15,11 @@ body {
     max-width: 525px;
     min-height: 670px;
     position: relative;
-    background: url(./images/unsplash3.jpg ) no-repeat center;
+    background: url(./images/unsplash3.jpg ) no-repeat;
+    background-size: cover;
     /* opacity: 0.9; */
-    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19)
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+    border-radius: 10px;
 }
 
 .login-snip {
@@ -171,6 +174,10 @@ a {
 
 .foot {
     text-align: center;
+}
+.foot:hover{
+    color: aqua;
+    cursor: pointer;
 }
 
 .card1 {
