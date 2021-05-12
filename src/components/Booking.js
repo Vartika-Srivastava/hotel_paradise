@@ -59,7 +59,7 @@ function Booking() {
           </h1>
 
           <div className="form-group">
-            <label htmlFor="duration"><sup>*</sup>Duration Of Stay :</label>
+            <label htmlFor="duration"><sup>*</sup>Days Of Stay :</label>
               <input
                 type="number"
                 className="form-control"
@@ -80,17 +80,17 @@ function Booking() {
                 className="input"
                 required
               >
-                <option >Single Room</option>
-                <option defaultValue="Double Room">Double Room</option>
-                <option defaultValue="Family Room">Family Room</option>
-                <option defaultValue="Luxurious  Single Room">
-                  Luxurious Single Room
+                <option >Room</option>
+                <option defaultValue="Palace Room">Palace Room</option>
+                <option defaultValue="Historical Suite">Historical Suite</option>
+                <option defaultValue="Royal Suite">
+                Royal Suite
                 </option>
-                <option defaultValue="Luxurious  Double Room">
-                  Luxurious Double Room
+                <option defaultValue="Grand Royal Suite">
+                Grand Royal Suite
                 </option>
-                <option defaultValue="Luxurious  Suite" className="mrg">
-                  Luxurious Suite
+                <option defaultValue="Grand Presidential Suite">
+                Grand Presidential Suite
                 </option>
               </select>
           </div>
@@ -182,6 +182,7 @@ function Booking() {
             Submit
           </button>
         </div>
+        <p className="form-check text-center"><i>Feild marked with <b><sup>*</sup></b>are requires.</i> </p>
       </div>
     </div>
   );
