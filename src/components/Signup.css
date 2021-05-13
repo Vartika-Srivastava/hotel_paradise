@@ -17,7 +17,6 @@ body {
     position: relative;
     background: url(./images/unsplash3.jpg ) no-repeat;
     background-size: cover;
-    /* opacity: 0.9; */
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
     border-radius: 10px;
 }
@@ -172,10 +171,10 @@ a {
     background: rgba(20, 11, 11, 0.2);
 }
 
-.foot {
+.foott {
     text-align: center;
 }
-.foot:hover{
+.foott:hover{
     color: aqua;
     cursor: pointer;
 }

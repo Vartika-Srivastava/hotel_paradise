@@ -4,7 +4,7 @@ import  "./Booking.css";
 function Booking() {
   
   return (
-    <div className="container cont">
+    <div className="container cont" data-aos="zoom-out-up">
       <h1 className="topheading">Book Now</h1>
 
       <div className="container2">
@@ -91,17 +91,12 @@ function Booking() {
                 required
               >
                 <option >Room</option>
-                <option defaultValue="Palace Room">Palace Room</option>
-                <option defaultValue="Historical Suite">Historical Suite</option>
-                <option defaultValue="Royal Suite">
-                Royal Suite
-                </option>
-                <option defaultValue="Grand Royal Suite">
-                Grand Royal Suite
-                </option>
-                <option defaultValue="Grand Presidential Suite">
-                Grand Presidential Suite
-                </option>
+                <option defaultValue="Double Room">Double Room</option>
+                <option defaultValue="Executive Club">Executive Club</option>
+                <option defaultValue="Queen Room">Queen Room</option>
+                <option defaultValue="King Room">King Room</option>
+                <option defaultValue="Luxury Suite">Luxury Suite</option>
+                <option defaultValue="Royal Suite">Royal Suite</option>
               </select>
           </div>
 
@@ -165,25 +160,49 @@ function Booking() {
             <input
               className="form-check-input"
               type="radio"
-              name="Payment"
+              name="Pay"
               id="Card Payment"
             />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              Card Payment
+              Cash Payment
             </label>
           </div>
 
           <div className="form-check">
-            <input
+          <input
               className="form-check-input"
               type="radio"
-              name="Payment"
+              name="Pay"
               id="Online Payment"
               defaultChecked
             />
             <label className="form-check-label" htmlFor="flexRadioDefault2">
               Online Payment
-            </label>
+            </label><br/>
+
+            <div className="form-check form-check-inline">
+              <input
+                    className="form-check-input"
+                    type="radio"
+                    name="opay"
+                    id="upi Payment"
+                  />
+              <label className="radio-inline fs-6" htmlFor="flexRadioDefault1">
+                UPI Payment
+              </label>
+            </div>
+
+            <div className="form-check form-check-inline">
+              <input
+                  className="form-check-input"
+                  type="radio"
+                  name="opay"
+                  id="Card Payment"
+                />
+              <label className="form-check-label fs-6" htmlFor="flexRadioDefault1">
+                Card Payment
+              </label>
+            </div>
           </div>
         </div>
 
@@ -192,7 +211,7 @@ function Booking() {
             Submit
           </button>
         </div>
-        <p className="form-check text-center"><i>Feild marked with <b><sup>*</sup></b>are requires.</i> </p>
+        <p className="dcur form-check text-center"><i>Feild marked with <b>*</b> are requires.</i> </p>
       </div>
     </div>
   );

@@ -36,8 +36,8 @@ export default function Signup() {
 
                                     <div className="hr"></div>
 
-                                    <div className="foot"> 
-                                        <a to="#">Forgot Password?</a> 
+                                    <div className="foott"> 
+                                        <label className="fs-6">Forgot Password</label> 
                                     </div>
                                 </div>
 
@@ -68,7 +68,7 @@ export default function Signup() {
 
                                     <div className="hr"></div>
 
-                                    <div className="foot"> 
+                                    <div className="foott"> 
                                         <label htmlFor="tab-1">Already Member?</label> 
                                     </div>
                                 </div>

@@ -18,7 +18,7 @@ function Rooms() {
                     <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
-                                <img className="card-img-top rimg" src={double} alt="Card image cap"/>
+                                <img className="card-img-top rimg" src={double} alt="Room types"/>
                             </div> 
                             <div className="flip-card-back">
                                 <h1>Double Room </h1>
@@ -40,7 +40,7 @@ function Rooms() {
                     <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
-                                <img className="card-img-top rimg" src={Executive} alt="Card image cap"/>
+                                <img className="card-img-top rimg" src={Executive} alt="Room types"/>
                             </div> 
                             <div className="flip-card-back">
                                 <h1>Executive Club</h1>
@@ -61,7 +61,7 @@ function Rooms() {
                     <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
-                                <img className="card-img-top rimg" src={Queen} alt="Card image cap"/>
+                                <img className="card-img-top rimg" src={Queen} alt="Room types"/>
                             </div> 
                             <div className="flip-card-back">
                                 <h1>Queen Room</h1>
@@ -85,7 +85,7 @@ function Rooms() {
                     <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
-                                <img className="card-img-top rimg" src={grandroyal} alt="Card image cap"/>
+                                <img className="card-img-top rimg" src={grandroyal} alt="Room types"/>
                             </div> 
                             <div className="flip-card-back">
                                 <h1>King Room</h1>
@@ -107,7 +107,7 @@ function Rooms() {
                     <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
-                                <img className="card-img-top rimg" src={luxury} alt="Card image cap"/>
+                                <img className="card-img-top rimg" src={luxury} alt="Room types"/>
                             </div> 
                             <div className="flip-card-back">
                                 <h1>Luxury Suite</h1>
@@ -129,7 +129,7 @@ function Rooms() {
                     <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
-                                <img className="card-img-top rimg" src={royal} alt="Card image cap"/>
+                                <img className="card-img-top rimg" src={royal} alt="Room types"/>
                             </div> 
                             <div className="flip-card-back">
                                 <h1>Royal Suite </h1>
