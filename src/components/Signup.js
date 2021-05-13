@@ -3,7 +3,7 @@ import './Signup.css'
 
 export default function Signup() {
     return (
-        <div className="row">
+        <div className="row" data-aos="zoom-out-up">
             <div className="col-md-6 mx-auto ">
                 <div className="card card1">
                     <div className="login-box">

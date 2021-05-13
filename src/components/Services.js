@@ -13,11 +13,11 @@ import wifi from './images/Services/wifi.png'
 function Services() {
     return (
         <>
-            <h1 className="text-center top ">Services</h1>
+            <h1 className="text-center top " data-aos="fade-up">Services</h1>
 
             <div className="row row-cols-1 row-cols-md-3 g-4">
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={pool} alt="Card image cap"/>
                         <div className="card-body ">
@@ -26,7 +26,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={gym} alt="Card image cap"/>
                         <div className="card-body">
@@ -35,7 +35,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={bar} alt="Card image cap"/>
                         <div className="card-body">
@@ -44,7 +44,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={event} alt="Card image cap"/>
                         <div className="card-body">
@@ -53,7 +53,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up"> 
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={gaming} alt="Card image cap"/>
                         <div className="card-body">
@@ -62,7 +62,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={restro} alt="Card image cap"/>
                         <div className="card-body">
@@ -71,7 +71,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={spa} alt="Card image cap"/>
                         <div className="card-body">
@@ -80,7 +80,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={pet} alt="Card image cap"/>
                         <div className="card-body">
@@ -89,7 +89,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={wifi} alt="Card image cap"/>
                         <div className="card-body">
@@ -98,6 +98,7 @@ function Services() {
                     </div>
                 </div>
             </div>
+            <hr className="line" data-aos="fade-up"/>
         </>
     )
 }

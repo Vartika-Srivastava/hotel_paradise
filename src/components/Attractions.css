@@ -1,6 +1,6 @@
 .att{
-    height: 380px;
-    width: 450px;
+    height: 100%;
+    width: 100%;
 }
 
 .att:hover{
@@ -9,6 +9,10 @@
     box-shadow: 0 0 40px rgb(29, 28, 28);
 }
 .atimg{
-    width: 451px;
+    width: 29vw;
+    height: 51vh;
     margin: 15px 0px 10px 25px;
+}
+.ahead{
+    margin-top: 15px;
 }
