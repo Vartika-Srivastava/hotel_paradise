@@ -4,7 +4,7 @@ import  "./Booking.css";
 function Booking() {
   
   return (
-    <div className="container">
+    <div className="container cont">
       <h1 className="topheading">Book Now</h1>
 
       <div className="container2">
