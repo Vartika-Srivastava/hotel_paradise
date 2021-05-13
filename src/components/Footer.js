@@ -3,7 +3,6 @@ import React from 'react'
 
 function Footer() {
     return (
-<<<<<<< HEAD
         <footer className="page-footer font-small mdb-color pt-4 text-light bg-dark ">
         <div className="container text-center text-md-left">
             <div className="row text-center text-md-left mt-3 pb-3">
@@ -100,11 +99,6 @@ function Footer() {
         </div>
 
         </footer>
-=======
-        <div>
-            
-        </div>
->>>>>>> 3608efb5aac6184613f2cbdc3613d791dfb01657
     )
 }
 
