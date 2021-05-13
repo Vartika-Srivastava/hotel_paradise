@@ -10,11 +10,11 @@ import img6 from './images/Attractions/PannaMeenaKaKund.jpg'
 function Attractions() {
     return (
         <>
-            <h1 className="text-center">Nearby Attractions</h1>
+            <h1 className="text-center ahead" data-aos="fade-up">Nearby Attractions</h1>
 
             <div className="row row-cols-1 row-cols-md-3 g-4">
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card atimg">
                         <div className="card-body">
                             <p className="card-text text-center fs-4">City Palace</p>
@@ -23,7 +23,7 @@ function Attractions() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card atimg">
                         <div className="card-body">
                             <p className="card-text text-center fs-4">Galtaji</p>
@@ -32,7 +32,7 @@ function Attractions() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card atimg">
                         <div className="card-body">
                             <p className="card-text text-center fs-4">Hawa Mahal</p>
@@ -41,7 +41,7 @@ function Attractions() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card atimg">
                         <div className="card-body">
                             <p className="card-text text-center fs-4">Jaigarh Fort</p>
@@ -50,7 +50,7 @@ function Attractions() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card atimg">
                         <div className="card-body">
                             <p className="card-text text-center fs-4">Jal Mahal</p>
@@ -59,7 +59,7 @@ function Attractions() {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col" data-aos="fade-up">
                     <div className="card atimg">
                         <div className="card-body">
                             <p className="card-text text-center fs-4">Panna Meena Ka Kund</p>

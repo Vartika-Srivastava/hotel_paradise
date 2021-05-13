@@ -3,11 +3,11 @@
 }
 
 .flip-card {
-    width: 430px;
-    height: 350px;
+    width: 29vw;
+    height: 47vh;
     perspective: 1000px;
     transition: 0.6s;
-    margin: 10px 10px 10px 30px;
+    margin: 10px 6px 10px 30px;
   }
   
   .flip-card-inner {

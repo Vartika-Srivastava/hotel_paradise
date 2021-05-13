@@ -2,3 +2,11 @@ body {
     overflow-x: hidden;
     background-color: #f9f4d7;
   }
+  .line{
+    display: block;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    border-style: inset;
+    border-width: 1px;
+    margin-bottom: 25px;
+  }

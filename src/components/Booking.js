@@ -69,7 +69,17 @@ function Booking() {
                 max="31"
                 placeholder="XX"
                 required
-              />
+              />days
+              <input
+                type="number"
+                className="form-control"
+                className="input"
+                id="duration"
+                min="0"
+                max="31"
+                placeholder="XX"
+                required
+              />nights
           </div>
 
           <div className="form-group">
