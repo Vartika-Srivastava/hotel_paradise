@@ -1,9 +1,15 @@
+/* font-family: 'Akaya Telivigala', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Courier Prime', monospace;
+font-family: 'Rajdhani', sans-serif; */
 .simg {
     width: 27vw;
     height: 45vh;
     
 }
-
+.serv{
+    font-family: 'Akaya Telivigala', cursive
+}
 .scard {
     float:left;
     margin: 0px 0px 0px 20px;
@@ -11,6 +17,7 @@
 }
 .top {
     margin-top: 20px;
+    font-family: 'Courgette', cursive
 }
 
 .scard:hover { 

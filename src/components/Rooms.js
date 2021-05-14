@@ -1,5 +1,6 @@
 import React from 'react'
 import './Rooms.css'
+import {Link} from "react-router-dom";
 import double from './images/Rooms/Double-room-003.jpg'
 import Queen from './images/Rooms/queen.jpeg'
 import royal from './images/Rooms/RoyalSuite.jpg'
@@ -20,7 +21,7 @@ function Rooms() {
                             <div className="flip-card-front">
                                 <img className="card-img-top rimg" src={double} alt="Room types"/>
                             </div> 
-                            <div className="flip-card-back">
+                            <div className="flip-card-back back">
                                 <h1>Double Room </h1>
                                     <ul className="jai">
                                         <li>Upto 2 Guests allowed</li>
@@ -30,7 +31,9 @@ function Rooms() {
                                         <li>Size 46-51 Sq Mt.</li>
                                     </ul>
                                     <p className="text-center"><mark>Rs. 5,000 / Night.</mark></p>
-                                <button className="btn btn-primary me-md-2" type="button">Book Now</button>
+                                <Link to="/booking">
+                                    <button className="btn btn-primary me-md-2" type="button">Book Now</button>
+                                </Link>
                             </div>
                         </div> 
                     </div> 
@@ -42,7 +45,7 @@ function Rooms() {
                             <div className="flip-card-front">
                                 <img className="card-img-top rimg" src={Executive} alt="Room types"/>
                             </div> 
-                            <div className="flip-card-back">
+                            <div className="flip-card-back back">
                                 <h1>Executive Club</h1>
                                 <ul className="jai">
                                     <li>Upto 3 Guests allowed</li>
@@ -51,7 +54,9 @@ function Rooms() {
                                     <li>Size 70-80 Sq Mt</li>   
                                 </ul>
                                 <p className="text-center"><mark>Rs. 12,000 / Night.</mark></p>
-                                <button className="btn btn-primary me-md-2" type="button">Book Now</button>
+                                <Link to="/booking">
+                                    <button className="btn btn-primary me-md-2" type="button">Book Now</button>
+                                </Link>
                             </div>
                         </div> 
                     </div> 
@@ -63,7 +68,7 @@ function Rooms() {
                             <div className="flip-card-front">
                                 <img className="card-img-top rimg" src={Queen} alt="Room types"/>
                             </div> 
-                            <div className="flip-card-back">
+                            <div className="flip-card-back back">
                                 <h1>Queen Room</h1>
                                 <ul className="jai">
                                     <li>Upto 2 Guests allowed</li>
@@ -71,9 +76,10 @@ function Rooms() {
                                     <li>The suites are decorated with Rajasthani artwork</li>
                                     <li> Size 65-70 Sq mt </li>                
                                 </ul>    
-                                <p className="text-center"><mark>Rs. 18,000 / Night.</mark></p>                            
-                                
-                                <button className="btn btn-primary me-md-2" type="button">Book Now</button>
+                                <p className="text-center"><mark>Rs. 18,000 / Night.</mark></p>
+                                <Link to="/booking">
+                                    <button className="btn btn-primary me-md-2" type="button">Book Now</button>
+                                </Link>
                             </div>
                         </div> 
                     </div> 
@@ -87,7 +93,7 @@ function Rooms() {
                             <div className="flip-card-front">
                                 <img className="card-img-top rimg" src={grandroyal} alt="Room types"/>
                             </div> 
-                            <div className="flip-card-back">
+                            <div className="flip-card-back back">
                                 <h1>King Room</h1>
                                 <ul className="jai">
                                     <li>Upto 3 Guests allowed</li>
@@ -97,7 +103,9 @@ function Rooms() {
                                     <li>Size 139-144 Sq Mt.</li>
                                 </ul>
                                 <p className="text-center"><mark>Rs. 25,000 / Night.</mark></p>
-                                <button className="btn btn-primary me-md-2" type="button">Book Now</button>
+                                <Link to="/booking">
+                                    <button className="btn btn-primary me-md-2" type="button">Book Now</button>
+                                </Link>
                             </div>
                         </div> 
                     </div> 
@@ -109,7 +117,7 @@ function Rooms() {
                             <div className="flip-card-front">
                                 <img className="card-img-top rimg" src={luxury} alt="Room types"/>
                             </div> 
-                            <div className="flip-card-back">
+                            <div className="flip-card-back back">
                                 <h1>Luxury Suite</h1>
                                 <ul className="jai">
                                     <li>Upto 4 Guests allowed</li>
@@ -119,7 +127,9 @@ function Rooms() {
                                     <li>Size 139-144 Sq Mt.</li>
                                 </ul>          
                                 <p className="text-center"><mark>Rs. 40,000 / Night.</mark></p>
-                                <button className="btn btn-primary me-md-2" type="button">Book Now</button>
+                                <Link to="/booking">
+                                    <button className="btn btn-primary me-md-2" type="button">Book Now</button>
+                                </Link>
                             </div>
                         </div> 
                     </div> 
@@ -131,7 +141,7 @@ function Rooms() {
                             <div className="flip-card-front">
                                 <img className="card-img-top rimg" src={royal} alt="Room types"/>
                             </div> 
-                            <div className="flip-card-back">
+                            <div className="flip-card-back back">
                                 <h1>Royal Suite </h1>
                                 <ul className="jai">
                                     <li>Upto 4 Guests allowed</li>
@@ -141,7 +151,9 @@ function Rooms() {
                                     <li>Size 200-250 Sq Mt.</li> 
                                 </ul>
                                 <p className="text-center"><mark>Rs. 1,20,000 / Night.</mark></p>
-                                <button className="btn btn-primary me-md-2" type="button">Book Now</button>
+                                <Link to="/booking">
+                                    <button className="btn btn-primary me-md-2" type="button">Book Now</button>
+                                </Link>
                             </div>
                         </div> 
                     </div> 
