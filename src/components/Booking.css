@@ -50,9 +50,10 @@
     border: none;
     border-bottom: 1px solid  black;
     background: none;
-
 }
-
+.fnt{
+    font-family: 'Courier Prime', monospace;
+}
 
 .input:active{
     border: none;

@@ -5,13 +5,13 @@ function Booking() {
   
   return (
     <div className="container cont" data-aos="zoom-out-up">
-      <h1 className="topheading">Book Now</h1>
+      <h1 className="topheading fnt">Book Now</h1>
 
       <div className="container2">
 
         <div className="personal">
 
-          <h1 className="text-center mrg">
+          <h1 className="text-center mrg fnt">
             Personal Details
           </h1>
 
@@ -54,7 +54,7 @@ function Booking() {
 
         <div className="room">
 
-          <h1 className="text-center" className="mrg">
+          <h1 className="text-center" className="mrg fnt">
             Room Details
           </h1>
 
@@ -139,7 +139,7 @@ function Booking() {
 
         <div className="payment">
 
-          <h1 className="text-center" className="mrg">
+          <h1 className="text-center" className="mrg fnt">
             Payment Details
           </h1>
 

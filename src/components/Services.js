@@ -21,7 +21,7 @@ function Services() {
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={pool} alt="Services"/>
                         <div className="card-body ">
-                            <h5 className="card-title text-center fs-4">Swimming Pool</h5>
+                            <h5 className="card-title text-center fs-4 serv">Swimming Pool</h5>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ function Services() {
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={gym} alt="Services"/>
                         <div className="card-body">
-                            <h5 className="card-title text-center fs-4">GYM</h5>
+                            <h5 className="card-title text-center fs-4 serv">GYM</h5>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ function Services() {
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={bar} alt="Services"/>
                         <div className="card-body">
-                            <h5 className="card-title text-center fs-4 ">BAR</h5>
+                            <h5 className="card-title text-center fs-4 serv">BAR</h5>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ function Services() {
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={event} alt="Services"/>
                         <div className="card-body">
-                            <h5 className="card-title text-center fs-4 ">Event Hall</h5>
+                            <h5 className="card-title text-center fs-4 serv">Event Hall</h5>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ function Services() {
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={gaming} alt="Services"/>
                         <div className="card-body">
-                            <h5 className="card-title text-center fs-4 ">Gaming</h5>
+                            <h5 className="card-title text-center fs-4 serv">Gaming</h5>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ function Services() {
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={restro} alt="Services"/>
                         <div className="card-body">
-                            <h5 className="card-title text-center fs-4">Restaurant</h5>
+                            <h5 className="card-title text-center fs-4 serv">Restaurant</h5>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ function Services() {
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={spa} alt="Services"/>
                         <div className="card-body">
-                            <h5 className="card-title text-center fs-4">SPA</h5>
+                            <h5 className="card-title text-center fs-4 serv">SPA</h5>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ function Services() {
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={pet} alt="Services"/>
                         <div className="card-body">
-                            <h5 className="card-title text-center fs-4">Pet House</h5>
+                            <h5 className="card-title text-center fs-4 serv">Pet House</h5>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ function Services() {
                     <div className="card shadow p-3 mb-5 bg-white rounded scard">    
                         <img className="card-img-top simg" src={wifi} alt="Services"/>
                         <div className="card-body">
-                            <h5 className="card-title text-center fs-4">Free WI-FI</h5>
+                            <h5 className="card-title text-center fs-4 serv">Free WI-FI</h5>
                         </div>
                     </div>
                 </div>
