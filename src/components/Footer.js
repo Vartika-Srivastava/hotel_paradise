@@ -1,5 +1,9 @@
 import React from 'react'
 import './Footer.css'
+import facebook from './images/Services/facebook.jpg'
+import twitter from './images/Services/twitter.jpg'
+import insta from './images/Services/insta.jpg'
+import mail from './images/Services/mail.png'
 
 function Footer() {
     return (
@@ -49,16 +53,34 @@ function Footer() {
                 </div>
                 <hr className="w-100 clearfix d-md-none" />
                 <div className="col-md-3 col-xl-2 mx-auto mt-3">
-                    <h5 className="dcur text-uppercase mb-3 font-weight-bold">Contact</h5>
-                    <p className="dcur">
-                    <i className="fas fa-home mr-3"></i> Jaipur, India</p>
-                    <p className="dcur">
-                    <i className="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                    <p className="dcur">
-                    <i className="fas fa-phone mr-3"></i> +91 9** * **</p>
-                    <p className="dcur">
-                    <i className="fas fa-print mr-3"></i> +91 7** * ** </p>
+                    <h5 className="dcur text-uppercase mb-3 font-weight-bold">Contact Us </h5>
+                    <p>
+                    <a href="https://www.Gmail.com">
+                        <img src={mail} alt="Services" width="28" height="22"></img> 
+                    </a>
+                    </p>
+                    
+                    <p>
+                    <a href="https://www.facebook.com">
+                        <img src={facebook} alt="Services" width="28" height="22"></img> 
+                    </a>
+                    </p>
+
+                    <p>
+                    <a href="https://twitter.com/?logout=1620990060943">
+                        <img src={twitter} alt="Services" width="28" height="22"></img> 
+                    </a>
+
+                    </p>
+
+                    <p>
+                    <a href="https://www.instagram.com/">
+                        <img src={insta} alt="Services" width="28" height="22"></img> 
+                    </a>
+                    </p>
+                    
                 </div>
+                
 
                 <div className="dcur text-center p-4 text-light bg-dark">
                     © 2021 Copyright:HOTEL PARADISE

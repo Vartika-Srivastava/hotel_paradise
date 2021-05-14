@@ -2,29 +2,31 @@ import React from "react";
 import  "./Booking.css";
 
 function Booking() {
-  
+
   return (
     <div className="container cont" data-aos="zoom-out-up">
       <h1 className="topheading fnt">Book Now</h1>
 
       <div className="container2">
 
-        <div className="personal">
+        <form className="personal" action="/action_page.php" class="needs-validation" novalidate>
 
           <h1 className="text-center mrg fnt">
             Personal Details
           </h1>
 
-          <div className="form-group">
+          <div className="form-group" className="needs-validation" novalidate>
             <label htmlFor="fullname"><sup>*</sup>Full Name :</label>
               <input
                 type="text"
                 className="form-control"
-                id="fullname"
+                id="uname"
                 className="input"
                 placeholder="Full Name"
                 required
-              />
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
           </div>
 
           <div className="form-group">
@@ -50,7 +52,7 @@ function Booking() {
                 required
               />
           </div>    
-        </div>
+        </form>
 
         <div className="room">
 
@@ -150,68 +152,35 @@ function Booking() {
                 id="identity"
                 required
               >
+                <option selected disabled value="">Choose...</option>
                 <option >Adhar Card</option>
                 <option defaultValue="Double Room">Driving license</option>
                 <option defaultValue="Family Room">Passport</option>
               </select>
           </div>
-          
-          <div className="form-check">
-            <input
-              className="form-check-input"
-              type="radio"
-              name="Pay"
-              id="Card Payment"
-            />
-            <label className="form-check-label" htmlFor="flexRadioDefault1">
-              Cash Payment
-            </label>
-          </div>
-
-          <div className="form-check">
-          <input
-              className="form-check-input"
-              type="radio"
-              name="Pay"
-              id="Online Payment"
-              defaultChecked
-            />
-            <label className="form-check-label" htmlFor="flexRadioDefault2">
-              Online Payment
-            </label><br/>
-
-            <div className="form-check form-check-inline">
-              <input
-                    className="form-check-input"
-                    type="radio"
-                    name="opay"
-                    id="upi Payment"
-                  />
-              <label className="radio-inline fs-6" htmlFor="flexRadioDefault1">
-                UPI Payment
-              </label>
-            </div>
-
-            <div className="form-check form-check-inline">
-              <input
-                  className="form-check-input"
-                  type="radio"
-                  name="opay"
-                  id="Card Payment"
-                />
-              <label className="form-check-label fs-6" htmlFor="flexRadioDefault1">
-                Card Payment
-              </label>
-            </div>
-          </div>
         </div>
+        
+        <div className="form-group">
+            <label htmlFor="roomtype"><sup>*</sup>Payment : </label>
+              <select
+                className="custom-select input"
+                id="identity"
+                required
+              >
+                <option selected disabled value="">Choose...</option>
+                <option >Cash</option>
+                <option defaultValue="Double Room">UPI</option>
+                <option defaultValue="Family Room">Card</option>
+              </select>
+          </div>
+
 
         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
           <button className="btn btn-success me-md-2" type="button">
             Submit
           </button>
         </div>
-        <p className="dcur form-check text-center"><i>Feild marked with <b>*</b> are requires.</i> </p>
+        <p className="dcur form-check text-center"><i>Feild marked with <b>*</b> are required.</i> </p>
       </div>
     </div>
   );
