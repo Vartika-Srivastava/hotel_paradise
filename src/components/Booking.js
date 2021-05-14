@@ -7,7 +7,7 @@ function Booking() {
     <div className="container cont" data-aos="zoom-out-up">
       <h1 className="topheading">Book Now</h1>
 
-      <div className="container2">
+      <form className="container2">
 
         <div className="personal">
 
@@ -23,6 +23,8 @@ function Booking() {
                 id="fullname"
                 className="input"
                 placeholder="Full Name"
+                pattern="[a-z]{1,15}"
+                title="Username should only contain lowercase letters. e.g. john"
                 required
               />
           </div>
@@ -35,6 +37,8 @@ function Booking() {
                 className="input"
                 id="email"
                 placeholder="xyz@gmail.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                title="invalid email"
                 required
               />
           </div>
@@ -47,6 +51,9 @@ function Booking() {
                 id="phone"
                 className="input"
                 placeholder="+91 xxxxxxxxxx"
+                maxLength="10"
+                pattern="[7-9]{1}[0-9]{9}" 
+                title="Phone number with 7-9 and remaing 9 digit with 0-9"
                 required
               />
           </div>    
@@ -90,7 +97,7 @@ function Booking() {
                 className="input"
                 required
               >
-                <option >Room</option>
+                <option disabled>Room</option>
                 <option defaultValue="Double Room">Double Room</option>
                 <option defaultValue="Executive Club">Executive Club</option>
                 <option defaultValue="Queen Room">Queen Room</option>
@@ -206,13 +213,20 @@ function Booking() {
           </div>
         </div>
 
+      <div className="form-check">
+      <input className="form-check-input" type="checkbox" value="" id="invalidCheck2" required/>
+      <label className="form-check-label" htmlFor="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+       </div>
+
         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-          <button className="btn btn-success me-md-2" type="button">
+          <button className="btn btn-success me-md-2" type="submitt">
             Submit
           </button>
         </div>
         <p className="dcur form-check text-center"><i>Feild marked with <b>*</b> are requires.</i> </p>
-      </div>
+      </form>
     </div>
   );
 }
