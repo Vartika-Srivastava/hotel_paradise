@@ -8,12 +8,15 @@ body {
     margin-top: 20px;
 
 }
+.error{
+    font-size: 0.9em;
+}
 
 .login-box {
     width: 100%;
     margin: auto;
     max-width: 525px;
-    min-height: 670px;
+    min-height: 800px;
     position: relative;
     background: url(./images/unsplash3.jpg ) no-repeat;
     background-size: cover;
@@ -54,7 +57,7 @@ body {
 }
 
 .login-snip .tab {
-    font-size: 22px;
+    font-size: 25px;
     margin-right: 15px;
     padding-bottom: 5px;
     margin: 0 15px 10px 0;
@@ -97,7 +100,7 @@ body {
 
 .login-space .group .label {
     color: black;
-    font-size: 15px
+    font-size: 18px
 }
 
 .login-space .group .button {

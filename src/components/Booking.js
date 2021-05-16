@@ -25,8 +25,8 @@ function Booking() {
                 placeholder="Full Name"
                 required
                 />
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div className="valid-feedback">Valid.</div>
+                <div className="invalid-feedback">Please fill out this field.</div>
           </div>
 
           <div className="form-group">

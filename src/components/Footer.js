@@ -1,9 +1,5 @@
 import React from 'react'
 import './Footer.css'
-import facebook from './images/Services/facebook.jpg'
-import twitter from './images/Services/twitter.jpg'
-import insta from './images/Services/insta.jpg'
-import mail from './images/Services/mail.png'
 
 function Footer() {
     return (
@@ -54,32 +50,25 @@ function Footer() {
                 <hr className="w-100 clearfix d-md-none" />
                 <div className="col-md-3 col-xl-2 mx-auto mt-3">
                     <h5 className="dcur text-uppercase mb-3 font-weight-bold">Contact Us </h5>
-                    <p>
-                    <a href="https://www.Gmail.com">
-                        <img src={mail} alt="Services" width="28" height="22"></img> 
-                    </a>
-                    </p>
-                    
-                    <p>
-                    <a href="https://www.facebook.com">
-                        <img src={facebook} alt="Services" width="28" height="22"></img> 
-                    </a>
-                    </p>
 
-                    <p>
-                    <a href="https://twitter.com/?logout=1620990060943">
-                        <img src={twitter} alt="Services" width="28" height="22"></img> 
+                    <a className="text-reset" href="#">
+                        <i className="fas fa-phone-square-alt fa-2x"></i>
                     </a>
-
-                    </p>
-
-                    <p>
-                    <a href="https://www.instagram.com/">
-                        <img src={insta} alt="Services" width="28" height="22"></img> 
+                    <br/>
+                    <a className="text-reset" href="https://www.facebook.com">
+                        <i className="fab fa-facebook-square fa-2x"></i> 
                     </a>
-                    </p>
+                    <br/>
+                    <a className="text-reset" href="https://www.instagram.com/">
+                        <i className="fab fa-instagram fa-2x"></i> 
+                    </a>
+                    <br/>
+                    <a className="text-reset" href="https://www.Gmail.com">
+                        <i className="fas fa-envelope fa-2x"></i> 
+                    </a>
                     
                 </div>
+
                 
 
                 <div className="dcur text-center p-4 text-light bg-dark">
