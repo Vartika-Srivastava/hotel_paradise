@@ -1,7 +1,9 @@
 import React from 'react'
 import img1 from './images/Main/Hotel.jpg'
-import img2 from './images/Main/Pool.jpg'
-import img3 from './images/Main/Paradisefood.jpg'
+import img2 from './images/Main/rambagh.jpeg'
+import img3 from './images/Main/rambagh2.jpeg'
+import img4 from './images/Main/rambagh4.jpeg'
+import img5 from './images/Main/Paradisefood.jpg'
 
 function Mainpic() {
     let mStyle = { 
@@ -15,6 +17,8 @@ function Mainpic() {
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
 
             <div className="carousel-inner">
@@ -29,6 +33,15 @@ function Mainpic() {
                 <div className="carousel-item">
                 <img src={img3} className="d-block w-100 mimg" alt="..." style ={mStyle} />
                 </div>
+
+                <div className="carousel-item">
+                <img src={img4} className="d-block w-100 mimg" alt="..." style ={mStyle} />
+                </div> 
+
+                <div className="carousel-item">
+                <img src={img5} className="d-block w-100 mimg" alt="..." style ={mStyle} />
+                </div>
+
             </div>
 
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
