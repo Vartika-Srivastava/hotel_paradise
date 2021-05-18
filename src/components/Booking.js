@@ -6,52 +6,54 @@ function Booking() {
   const [uname, setUser] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [Day, setDay] = useState("");
-  const [night, setNight] = useState("");
   const [rooms, setRooms] = useState("");
-  const [checkin, setCheckin] = useState("");
-  const [checkout, setCheckout] = useState("");
 
+  const [agree, setAgree] = useState(false);
+  const [paym, setPaym] = useState({
+    card: false,
+    cash: false,
+    upi: false
+  });
   const [userErr, setUserErr] = useState(false);
   const [phoneErr, setPhoneErr] = useState(false);
   const [emailErr, setEmailErr] = useState(false);
-  const [dayErr, setdayErr] = useState(false);
-  const [nightErr, setnightErr] = useState(false);
   const [roomsErr, setRoomsErr] = useState(false);
-  const [checkinErr, setCheckinErr] = useState(false);
-  const [checkoutErr, setCheckoutErr] = useState(false);
-
   function BookingHandle(e) {
     e.preventDefault();
     if (
       uname.length === 0 ||
       phone.length === 0 ||
       email.length === 0 ||
-      Day.length === 0 ||
-      night.length === 0 ||
-      rooms.length === 0 ||
-      checkin.length === 0 ||
-      checkout.length === 0 
-    ) {
+      rooms.length === 0 
+    ) 
+    {
       alert("Please complete the form");
-    } else if (uname.length < 3) {
+    } 
+    else if (uname.length < 3) {
       alert("Invalid inputs");
-    } else if (phone.length != 10) {
+    } 
+    else if (phone.length !== 10) {
       alert("Invalid phone");
-    } else if (rooms > 10) {
-      alert(" You can book maximum of 10 rooms ");
-    } else if (Day > 30 || night > 30) {
-      alert("Invalid days to stay");
-    } else {
+    }
+     else if (rooms > 6) {
+      alert(" You can book maximum of 6 rooms ");
+    }
+     else {
       alert("Booking Successfull see you soon! ");
     }
   }
 
   function unameHandle(e) {
     let name = e.target.value;
-    if (name.length < 3) {
+    var reg = /^[a-zA-Z]+$/
+    if(!(name.match(reg)))
+    {
       setUserErr(true);
-    } else {
+    }
+    else if (name.length < 3) {
+      setUserErr(true);
+    } 
+    else {
       setUserErr(false);
     }
     setUser(name);
@@ -59,7 +61,7 @@ function Booking() {
 
   function phoneHandle(e) {
     let ph = e.target.value;
-    if (ph.length > 10) {
+    if (ph.length > 10 || ph.length < 10) {
       setPhoneErr(true);
     } else {
       setPhoneErr(false);
@@ -77,54 +79,46 @@ function Booking() {
     }
     setEmail(e.target.value);
   }
-  function dayHandle(e) {
-    let Days = e.target.value;
-    if (Days > 30 || Days.length == 0) {
-      setdayErr(true);
-    } else {
-      setdayErr(false);
-    }
-    setDay(Days);
-  }
-  function nightHandle(e) {
-    let nights = e.target.value;
-    if (nights > 30) {
-      setnightErr(true);
-    } else {
-      setnightErr(false);
-    }
-    setNight(nights);
-  }
 
   function roomsHandle(e) {
     let room = e.target.value;
-    if (room > 10) {
+    if (room > 6) {
       setRoomsErr(true);
-    } else {
-      setnightErr(false);
+    } 
+    else {
+      setRoomsErr(false);
     }
     setRooms(room);
   }
-  function checkinHandle(e) {
-    let chIn = e.target.value;
-    if (chIn == 0) {
-      setCheckinErr(true);
-    } else {
-      setCheckinErr(false);
+  
+  function payHandle(e){
+    let meth = e.target.value;
+    if(meth === "UPI"){
+      setPaym({
+        card: false,
+        cash: false,
+        upi: true
+      });
     }
-    setCheckin(chIn);
-  }
-  function checkoutHandle(e) {
-    let chOut = e.target.value;
-    if (chOut == 0 ) {
-      setCheckoutErr(true);
-    } else {
-      setCheckoutErr(false);
+    else if(meth === "Cash"){
+      setPaym({
+        card: false,
+        cash: true,
+        upi: false
+      });
     }
-    setCheckout(chOut);
+    else if(meth === "Card"){
+        setPaym({
+          card: true,
+          cash: false,
+          upi: false
+        });
+      }
   }
 
-
+  function termHandle() {
+    setAgree(!agree);
+  }
 
   return (
     <div className="container cont" data-aos="zoom-out-up">
@@ -190,11 +184,9 @@ function Booking() {
             />
             {phoneErr ? (
               <span className="error text-danger">
-                Phone number with 7-9 and remaing 9 digit with 0-9
+                Invalid Phone Number
               </span>
-            ) : (
-              ""
-            )}
+            ) : ""}
           </div>
         </div>
 
@@ -204,50 +196,45 @@ function Booking() {
           </h1>
 
           <div className="form-group">
-            <label htmlFor="duration">
-              <sup>*</sup>Days Of Stay :
+            <label htmlFor="checkin">
+              <sup>*</sup>Check In Date :
             </label>
             <input
-              id="Day"
-              name="stay"
-              type="number"
+              id="Checkin"
+              name="checkin"
+              type="date"
+              min="2021-01-01"
+              max="2030-01-01"
               className="form-control"
               className="input"
-              min="0"
-              max="31"
-              placeholder="XX"
-              onChange={dayHandle}
             />
-            days
+
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="checkout">
+              <sup>*</sup>Chek Out Date :
+            </label>
             <input
-              id="night"
-              name="saty"
-              type="number"
+              id="checkout"
+              name="checkout"
+              type="date"
+              min="2021-01-01"
+              max="2030-01-01"
               className="form-control"
               className="input"
-              min="0"
-              max="30"
-              placeholder="XX"
-              onChange={nightHandle}
             />
-            nights
-            {dayErr || nightErr ? (
-              <span className="error text-danger"> Max value can be 30 </span>
-            ) : (
-              ""
-            )}
 
           </div>
 
           <div className="form-group">
             <label htmlFor="roomtype">
-              <sup>*</sup>Type of Room :{" "}
+              <sup>*</sup>Type of Room :
             </label>
             <select
               className="custom-select"
               id="roomtype"
               className="input"
-              placeholder="Room"
             >
               <option defaultValue="Double Room">Double Room</option>
               <option defaultValue="Executive Club">Executive Club</option>
@@ -268,55 +255,14 @@ function Booking() {
               type="number"
               className="form-control"
               className="input"
-              max="10"
+              max="6"
               min="1"
               placeholder="XX"
               onChange={roomsHandle}
             />
-          </div>
-          {roomsErr ? (
-              <span className="error text-danger"> Max of 10 rooms </span>
-            ) : (
-              ""
-            )}
-
-          <div className="form-group">
-            <label htmlFor="checkin">
-              <sup>*</sup>Check In Date :
-            </label>
-            <input
-              id="Checkin"
-              name="checkin"
-              type="date"
-              className="form-control"
-              className="input"
-              onChange={checkinHandle}
-            />
-            {checkinErr ? (
-              <span className="error text-danger"> Max of 10 rooms </span>
-            ) : (
-              ""
-            )}
+            {roomsErr ?<span className="error text-danger"> Max 6 rooms </span> : ""}
           </div>
 
-          <div className="form-group">
-            <label htmlFor="checkout">
-              <sup>*</sup>Chek Out Date :
-            </label>
-            <input
-              id="checkout"
-              name="checkout"
-              type="date"
-              className="form-control"
-              className="input"
-              onChange={checkoutHandle}
-            />
-            {checkoutErr ? (
-              <span className="error text-danger"> Max of 10 rooms </span>
-            ) : (
-              ""
-            )}
-          </div>
         </div>
 
         <div className="payment">
@@ -329,7 +275,7 @@ function Booking() {
               <sup>*</sup>Identity Proof :{" "}
             </label>
             <select className="custom-select input" id="identity" required>
-              <option selected disabled value="">
+              <option defaultValue disabled defaultValue="">
                 Choose...
               </option>
               <option>Adhar Card</option>
@@ -343,34 +289,52 @@ function Booking() {
           <label htmlFor="roomtype">
             <sup>*</sup>Payment :{" "}
           </label>
-          <select className="custom-select input" id="identity" required>
-            <option selected disabled value="">
-              Choose...
-            </option>
-            <option>Cash</option>
-            <option defaultValue="Double Room">UPI</option>
-            <option defaultValue="Family Room">Card</option>
-          </select>
+          <select className="custom-select input" id="identity" onChange={payHandle} required>
+            <option defaultValue="cash" name="cash">Cash</option>
+            <option defaultValue="upi" name="upi">UPI</option>
+            <option defaultValue="card" name="card">Card</option>
+          </select><br/>
+          {paym.upi?<span>
+            <label htmlFor="upino" className="fs-6">&nbsp;&nbsp;UPI Id : </label>
+              <input
+                type="text"
+                className="form-control"
+                id="upino"
+                name="upino"
+                className="input"
+                placeholder="Enter UPI Id"/>
+            </span>
+              : paym.card? <span>
+              <label htmlFor="cardno" className="fs-6">&nbsp;&nbsp;Card details : </label>
+              <input
+                type="text"
+                className="form-control"
+                id="cardno"
+                name="cardno"
+                className="input"
+                placeholder="Enter card number"
+              /></span>:""
+            }
         </div>
 
         <div className="form-check">
           <input
             className="form-check-input"
             type="checkbox"
-            value=""
-            id="invalidCheck2"
-            required 
+            defaultValue="t"
+            id="agree"
+            onChange={termHandle}
           />
-          <label className="form-check-label" htmlFor="invalidCheck2">
-            Agree to terms and conditions
+          <label className="form-check-label" htmlFor="agree">
+            I Agree to terms and conditions
           </label>
         </div>
 
         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
           <button
             className="btn btn-success me-md-2"
-            type="button"
-            onClick={BookingHandle}
+            disabled={!agree}
+            onClick={BookingHandle} 
           >
             Submit
           </button>
@@ -378,7 +342,7 @@ function Booking() {
         <p className="dcur form-check text-center">
           <i>
             Feild marked with <b>*</b> are required.
-          </i>{" "}
+          </i>
         </p>
       </form>
     </div>

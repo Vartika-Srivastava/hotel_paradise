@@ -10,7 +10,7 @@ import img6 from './images/Attractions/nahargarh.jpg'
 function Attractions() {
     return (
         <>
-            <h1 className="text-center ahead" data-aos="fade-up">Nearby Attractions</h1>
+            <h1 className="text-center head" data-aos="fade-up">Nearby Attractions</h1>
 
             <div className="row row-cols-1 row-cols-md-3 g-4">
 

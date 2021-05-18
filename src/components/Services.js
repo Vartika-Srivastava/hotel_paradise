@@ -12,8 +12,8 @@ import wifi from './images/Services/wifi.png'
 
 function Services() {
     return (
-        <>
-            <h1 className="text-center top " data-aos="fade-up">Services</h1>
+        <div>
+            <h1 className="text-center head" data-aos="fade-up">Services</h1>
 
             <div className="row row-cols-1 row-cols-md-3 g-4">
 
@@ -98,8 +98,11 @@ function Services() {
                     </div>
                 </div>
             </div>
-            <hr className="line" data-aos="fade-up"/>
-        </>
+            <div className="cond">
+                *Terms and conditions applied
+            </div>
+            <hr className="line" data-aos="fade-up" style={{marginTop: "0px"}}/>
+        </div>
     )
 }
 

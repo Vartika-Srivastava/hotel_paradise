@@ -15,11 +15,12 @@ font-family: 'Rajdhani', sans-serif; */
     margin: 0px 0px 0px 20px;
     transition: all .2s ease-in-out;
 }
-.top {
-    margin-top: 20px;
-    font-family: 'Courgette', cursive
+.cond{
+    font-size: x-small;
+    margin: 0;
+    margin-right: 45px;
+    text-align: right;
 }
-
 .scard:hover { 
     transform: scale(0.9); 
 }

@@ -46,7 +46,12 @@ export default function Signup() {
 
     function userHandle(e) {
         let name = e.target.value;
-        if(name.length < 3)
+        var reg = /^[a-zA-Z]+$/
+        if(!(name.match(reg)))
+        {
+            setUserErr(true);
+        }
+        else if(name.length < 3)
         {
             setUserErr(true);
         }
