@@ -51,7 +51,7 @@ function Footer() {
                 <div className="col-md-3 col-xl-2 mx-auto mt-3">
                     <h5 className="dcur text-uppercase mb-3 font-weight-bold">Contact Us </h5>
 
-                    <a className="text-reset" href="#">
+                    <a className="text-reset" href="https://www.facebook.com">
                         <i className="fas fa-phone-square-alt fa-2x"></i>
                     </a>
                     <br/>
