@@ -1,6 +1,7 @@
 import React from "react";
 import "./Booking.css";
 import { useState } from "react";
+import {Redirect} from "react-router-dom";
 
 function Booking() {
   const [uname, setUser] = useState("");
@@ -8,6 +9,7 @@ function Booking() {
   const [email, setEmail] = useState("");
   const [rooms, setRooms] = useState("");
 
+  const [redToRef, setredToRef] = useState(false)
   const [agree, setAgree] = useState(false);
   const [paym, setPaym] = useState({
     card: false,
@@ -18,6 +20,7 @@ function Booking() {
   const [phoneErr, setPhoneErr] = useState(false);
   const [emailErr, setEmailErr] = useState(false);
   const [roomsErr, setRoomsErr] = useState(false);
+
   function BookingHandle(e) {
     e.preventDefault();
     if (
@@ -39,13 +42,13 @@ function Booking() {
       alert(" You can book maximum of 6 rooms ");
     }
      else {
-      alert("Booking Successfull see you soon! ");
+      setredToRef(true);
     }
   }
 
   function unameHandle(e) {
     let name = e.target.value;
-    var reg = /^[a-zA-Z]+$/
+    var reg = /^[a-zA-Z\s]+$/
     if(!(name.match(reg)))
     {
       setUserErr(true);
@@ -338,6 +341,7 @@ function Booking() {
           >
             Submit
           </button>
+          {redToRef? <Redirect to="/thank" /> : ""}
         </div>
         <p className="dcur form-check text-center">
           <i>

@@ -1,6 +1,7 @@
-import React from 'react'
-import './Signup.css'
-import {useState} from 'react'
+import React from 'react';
+import './Signup.css';
+import {useState} from 'react';
+import {Redirect} from "react-router-dom";
 
 
 export default function Signup() {
@@ -9,6 +10,7 @@ export default function Signup() {
     const [rpass, setRpass] = useState("");
     const [email, setEmail] = useState("");
 
+    const [redToRef, setredToRef] = useState(false)
     const [userErr, setUserErr] = useState(false);
     const [passErr, setPassErr] = useState(false);
     const [rpassErr, setRpassErr] = useState(false);
@@ -28,6 +30,7 @@ export default function Signup() {
             alert("Login Successfull");
             setUser("");
             setPassword("");
+            setredToRef(true);
         }
     }
 
@@ -47,12 +50,13 @@ export default function Signup() {
             setPassword("");
             setRpass("");
             setEmail("");
+            setredToRef(true);
         }
     }
 
     function userHandle(e) {
         let name = e.target.value;
-        var reg = /^[a-zA-Z]+$/
+        var reg = /^[a-zA-Z\s]+$/
         if(!(name.match(reg)))
         {
             setUserErr(true);
@@ -136,7 +140,9 @@ export default function Signup() {
 
                                         <div className="group"> 
                                         <button type="button" className="button btn btn-primary" onClick={loginHandle}>submit</button>
+                                        {redToRef? <Redirect to="/" /> : ""} 
                                         </div>
+                                        
 
                                         <div className="hr"></div>
 
@@ -171,6 +177,7 @@ export default function Signup() {
 
                                         <div className="group"> 
                                             <button type="button" className="button btn btn-primary" onClick={signupHandle}>submit</button>
+                                            {redToRef? <Redirect to="/" /> : ""}
                                         </div>
 
                                         <div className="hr"></div>

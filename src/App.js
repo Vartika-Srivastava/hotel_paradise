@@ -4,6 +4,7 @@ import Mainpg from './components/Mainpg';
 import Booking from './components/Booking';
 import Signup from './components/Signup';
 import Footer from './components/Footer';
+import Thank from './components/Thank'
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,6 +24,10 @@ function App() {
 
           <Route path="/booking">
             <Booking />
+          </Route>
+
+          <Route path="/thank">
+            <Thank />
           </Route>
 
           <Route path="/signup">
