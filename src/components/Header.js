@@ -27,7 +27,7 @@ function Header(props) {
 
                 <ul className="navbar-nav justify-content-end">
                     <li className="nav-item fs-5">
-                        <Link className="nav-link" to="/signup">Login/Sigup</Link>
+                        <Link className="nav-link" to="/signup">Login/Signup</Link>
                     </li>
                 </ul>
             </div>

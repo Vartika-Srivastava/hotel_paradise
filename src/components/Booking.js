@@ -27,7 +27,7 @@ function Booking() {
       rooms.length === 0 
     ) 
     {
-      alert("Please complete the form");
+      alert("Fields Marked with * are Required");
     } 
     else if (uname.length < 3) {
       alert("Invalid inputs");
@@ -341,7 +341,7 @@ function Booking() {
         </div>
         <p className="dcur form-check text-center">
           <i>
-            Feild marked with <b>*</b> are required.
+            Fields marked with <b>*</b> are required.
           </i>
         </p>
       </form>

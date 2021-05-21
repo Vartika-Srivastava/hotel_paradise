@@ -26,6 +26,8 @@ export default function Signup() {
         }
         else{
             alert("Login Successfull");
+            setUser("");
+            setPassword("");
         }
     }
 
@@ -41,6 +43,10 @@ export default function Signup() {
         }
         else{
             alert("Account successfully created");
+            setUser("");
+            setPassword("");
+            setRpass("");
+            setEmail("");
         }
     }
 
@@ -113,13 +119,13 @@ export default function Signup() {
                                     <div className="login">
                                         <div className="group">
                                             <label htmlFor="user" className="label">Username</label>
-                                            <input id="user" type="text" name="user" className="input" placeholder="Enter your username" onChange={userHandle} />
+                                            <input id="user" type="text" name="user" value={user} className="input" placeholder="Enter your username" onChange={userHandle} />
                                             {userErr? <span className="error text-danger">Username invalid</span> : ""}
                                         </div>
 
                                         <div className="group"> 
                                             <label htmlFor="pass" className="label">Password</label>
-                                            <input id="password" type="password" name="password" className="input" data-type="password" placeholder="Enter your password" onChange={passHandle} />
+                                            <input id="password" type="password" name="password" value={password} className="input" data-type="password" placeholder="Enter your password" onChange={passHandle} />
                                             {passErr? <span className="error text-danger">Password should be greater than 5 characters</span> : ""}
                                         </div>
 
@@ -141,25 +147,25 @@ export default function Signup() {
                                     <div className="sign-up-form">
                                         <div className="group"> 
                                             <label htmlFor="user" className="label">Username</label> 
-                                            <input id="suser" type="text" name="suser" className="input" placeholder="Create your Username" onChange={userHandle}/> 
+                                            <input id="suser" type="text" name="suser" value={user} className="input" placeholder="Create your Username" onChange={userHandle}/> 
                                             {userErr? <span className="error text-danger">Username invalid</span> : ""}
                                         </div>
 
                                         <div className="group"> 
                                             <label htmlFor="pass" className="label">Password</label> 
-                                            <input id="spass" type="password" name="spass" className="input" data-type="password" placeholder="Create your password" onChange={passHandle}/> 
+                                            <input id="spass" type="password" name="spass" value={password} className="input" data-type="password" placeholder="Create your password" onChange={passHandle}/> 
                                             {passErr? <span className="error text-danger">Password should be greater than 5 characters</span> : ""}
                                         </div>
 
                                         <div className="group"> 
                                             <label htmlFor="pass" className="label">Repeat Password</label> 
-                                            <input id="rspass" type="password" name="rspass" className="input" data-type="password" placeholder="Repeat your password" onChange={rpassHandle} /> 
+                                            <input id="rspass" type="password" name="rspass" value={rpass} className="input" data-type="password" placeholder="Repeat your password" onChange={rpassHandle} /> 
                                             {rpassErr? <span className="error text-danger">Password doesn't match</span> : ""}
                                         </div>
 
                                         <div className="group"> 
                                             <label htmlFor="pass" className="label">Email Address</label> 
-                                            <input id="email" type="email" name="email" className="input" placeholder="Enter your email address" onChange={emailHandle} /> 
+                                            <input id="email" type="email" name="email" value={email} className="input" placeholder="Enter your email address" onChange={emailHandle} /> 
                                             {emailErr? <span className="error text-danger">Incorrect Email Id</span> : ""}
                                         </div>
 
