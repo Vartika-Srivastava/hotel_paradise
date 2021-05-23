@@ -18,16 +18,13 @@ function Footer() {
                 <div className="col-md-3 col-xl-2 mx-auto mt-3">
                     <h5 className="dcur text-uppercase mb-3 font-weight-bold">LANGUAGES USED</h5>
                     <p>
-                    <a className="text-reset" target="_blank" rel="noreferrer" href="https://getbootstrap.com">Bootstrap</a>
-                    </p>
-                    <p>
-                    <a className="text-reset" target="_blank" rel="noreferrer" href="https://reactjs.org/">React JS</a>
-                    </p>
-                    <p>
                     <a className="text-reset" target="_blank" rel="noreferrer" href="https://www.w3schools.com/html/">HTML</a>
                     </p>
                     <p>
-                    <a className="text-reset" target="_blank" rel="noreferrer" href="https://www.w3schools.com/Css/">CSS</a>
+                    <a className="text-reset" target="_blank" rel="noreferrer" href="https://www.w3schools.com/Css/">CSS<br/>(Bootstrap)</a>
+                    </p>
+                    <p>
+                    <a className="text-reset" target="_blank" rel="noreferrer" href="https://reactjs.org/">JavaScript<br/>(React Js)</a>
                     </p>
                 </div>
 

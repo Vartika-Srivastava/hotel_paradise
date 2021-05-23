@@ -14,6 +14,7 @@ body {
   }
   .head{
     font-family: 'Courgette', cursive;
-    margin-top: 20px;
+    font-size: 3.5em;
+    margin-top: 25px;
     text-shadow: 2px 2px rgb(180, 175, 245);
   }

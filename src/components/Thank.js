@@ -1,7 +1,7 @@
 import React from 'react';
 import img from './images/book3.jpg';
 
-function thank() {
+function Thank() {
     const bookStyle = {
         height: "100vh",
         width: "80%",
@@ -11,10 +11,10 @@ function thank() {
         border: "2px solid black"
     }
     return (
-        <div className="d-flex justify-content-center" data-aos="fade-right">
+        <div className="d-flex justify-content-center" data-aos="zoom-out">
             <img className="rounded" src={img} alt="Thank you" style={bookStyle}/>
         </div>
     )
 }
 
-export default thank
+export default Thank

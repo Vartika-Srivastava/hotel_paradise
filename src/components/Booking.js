@@ -42,6 +42,7 @@ function Booking() {
       alert(" You can book maximum of 6 rooms ");
     }
      else {
+      alert("Booking Successfull");
       setredToRef(true);
     }
   }
@@ -206,7 +207,7 @@ function Booking() {
               id="Checkin"
               name="checkin"
               type="date"
-              min="2021-01-01"
+              min="2021-05-24"
               max="2030-01-01"
               className="form-control"
               className="input"
@@ -222,7 +223,7 @@ function Booking() {
               id="checkout"
               name="checkout"
               type="date"
-              min="2021-01-01"
+              min="2021-05-24"
               max="2030-01-01"
               className="form-control"
               className="input"
