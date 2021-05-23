@@ -47,8 +47,6 @@ function Footer() {
                 <hr className="w-100 clearfix d-md-none" />
                 <div className="col-md-3 col-xl-2 mx-auto mt-3">
                     <h5 className="dcur text-uppercase mb-3 font-weight-bold">Contact Us </h5>
-
-                    
                     
                     <a className="text-reset" target="_blank" rel="noreferrer" href="https://www.facebook.com">
                         <i className="fab fa-facebook-square fa-2x"></i> 

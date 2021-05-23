@@ -29,6 +29,7 @@ function Rooms() {
                                         <li>Rich in terms of textures and colors</li> 
                                         <li>Walk in wardrobes and a spacious bathroom</li> 
                                         <li>Size 46-51 Sq Mt.</li>
+                                        <li>Total rooms: 10</li>
                                     </ul>
                                     <p className="text-center"><mark>Rs. 5,000 / Night.</mark></p>
                                 <Link to="/booking">
@@ -51,7 +52,8 @@ function Rooms() {
                                     <li>Upto 3 Guests allowed</li>
                                     <li>A spacious room with king bed, an enthralling view and an expansive bathroom.</li> 
                                     <li>Rich in terms of textures and colors</li>
-                                    <li>Size 70-80 Sq Mt</li>   
+                                    <li>Size 70-80 Sq Mt</li>
+                                    <li>Total rooms: 10</li> 
                                 </ul>
                                 <p className="text-center"><mark>Rs. 12,000 / Night.</mark></p>
                                 <Link to="/booking">
@@ -74,7 +76,8 @@ function Rooms() {
                                     <li>Upto 2 Guests allowed</li>
                                     <li>Queen room divided into a living room and a bedroom with queen size bed.</li>
                                     <li>The suites are decorated with Rajasthani artwork</li>
-                                    <li> Size 65-70 Sq mt </li>                
+                                    <li> Size 65-70 Sq mt </li> 
+                                    <li>Total rooms: 6</li>               
                                 </ul>    
                                 <p className="text-center"><mark>Rs. 18,000 / Night.</mark></p>
                                 <Link to="/booking">
@@ -101,6 +104,7 @@ function Rooms() {
                                     <li>The king rooms are decorated with Rajasthani artwork</li>
                                     <li>Large French Windows over looking the gardens</li> 
                                     <li>Size 139-144 Sq Mt.</li>
+                                    <li>Total rooms: 6</li>
                                 </ul>
                                 <p className="text-center"><mark>Rs. 25,000 / Night.</mark></p>
                                 <Link to="/booking">
@@ -125,6 +129,7 @@ function Rooms() {
                                     <li>With elegant, stylish and super luxurious interiors.</li>
                                     <li>A Sitting room and a master bedroom with dressing area.</li>
                                     <li>Size 139-144 Sq Mt.</li>
+                                    <li>Total suites: 4</li>
                                 </ul>          
                                 <p className="text-center"><mark>Rs. 40,000 / Night.</mark></p>
                                 <Link to="/booking">
@@ -149,6 +154,7 @@ function Rooms() {
                                     <li>Separated sitting room and a master bedroom with dressing area.</li>
                                     <li>Exclusive complimentary services like Chauffeur service, butler service etc</li>
                                     <li>Size 200-250 Sq Mt.</li> 
+                                    <li>Total suites: 2</li>
                                 </ul>
                                 <p className="text-center"><mark>Rs. 1,20,000 / Night.</mark></p>
                                 <Link to="/booking">
