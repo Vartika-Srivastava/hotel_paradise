@@ -1,5 +1,5 @@
 import React from 'react';
-import img from './images/book3.jpg';
+import img from './images/thanks.jpg';
 
 function Thank() {
     const bookStyle = {
