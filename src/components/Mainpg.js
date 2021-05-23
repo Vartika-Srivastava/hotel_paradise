@@ -5,9 +5,6 @@ import Services from './Services';
 import Attractions from './Attractions';
 
 function Mainpg() {
-    // let myStyle = {
-    //     minHeight: "2000px"
-    // }
     return (
         <div>
             <Mainpic />
